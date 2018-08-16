@@ -1,4 +1,4 @@
-- dashboard: Customer_users_overview
+- dashboard: customer_users_overview
   title: Customer Users Overview
   layout: newspaper
   elements:
@@ -39,19 +39,20 @@
     show_null_labels: false
     show_totals_labels: false
     show_silhouette: false
-    totals_color: "#808080"
+    totals_color: "#eb7d22"
     series_types: {}
     colors:
     - 'palette: Tomato to Steel Blue'
     series_colors:
-      OS X 10.13.4: "#bc2621"
-      OS X 10.13.3: "#87130a"
+      OS X 10.13.4: "#eb7d22"
+      OS X 10.13.3: "#3e3e40"
       OS X 10.13.2: "#e74b4b"
       OS X 10.12.6: "#c96741"
       ChromeOS 10176.73.0: "#f1a792"
       ChromeOS 10323.67.0: "#e7bdb8"
-      OS X 10.13.1: "#ead6d3"
-    row: 12
+      OS X 10.13.1: "#3e3e40"
+    listen: {}
+    row: 18
     col: 17
     width: 7
     height: 6
@@ -92,13 +93,14 @@
     show_null_labels: false
     show_totals_labels: false
     show_silhouette: false
-    totals_color: "#808080"
+    totals_color: "#eb7d22"
     series_types: {}
     series_colors:
-      Chrome: "#bb1034"
-    row: 6
-    col: 18
-    width: 6
+      Chrome: "#eb7d22"
+    listen: {}
+    row: 12
+    col: 17
+    width: 7
     height: 6
   - title: Non Active Users
     name: Non Active Users
@@ -147,7 +149,7 @@
     show_null_labels: false
     show_totals_labels: false
     show_silhouette: false
-    totals_color: "#808080"
+    totals_color: "#eb7d22"
     show_null_points: true
     point_style: none
     interpolation: linear
@@ -156,8 +158,9 @@
     hidden_fields:
     series_labels:
       history.most_recent_query_date: Most Recent Query Date
-    row: 0
-    col: 11
+    listen: {}
+    row: 21
+    col: 6
     width: 6
     height: 6
   - title: New Tile
@@ -203,7 +206,7 @@
     show_null_labels: false
     show_totals_labels: false
     show_silhouette: false
-    totals_color: "#808080"
+    totals_color: "#eb7d22"
     show_row_numbers: true
     truncate_column_names: false
     hide_totals: false
@@ -214,8 +217,9 @@
     conditional_formatting_include_nulls: false
     series_types: {}
     series_colors:
-      scheduled_plan.count: "#bb1034"
+      scheduled_plan.count: "#eb7d22"
     single_value_title: Schedules Count
+    listen: {}
     row: 12
     col: 0
     width: 4
@@ -237,6 +241,7 @@
     comparison_reverse_colors: false
     show_comparison_label: true
     single_value_title: Dashboards Count
+    listen: {}
     row: 16
     col: 0
     width: 4
@@ -261,6 +266,7 @@
     comparison_reverse_colors: false
     show_comparison_label: true
     single_value_title: Developers and Admins
+    listen: {}
     row: 14
     col: 0
     width: 4
@@ -305,7 +311,7 @@
     show_null_labels: false
     show_totals_labels: false
     show_silhouette: false
-    totals_color: "#808080"
+    totals_color: "#eb7d22"
     custom_color_enabled: false
     custom_color: forestgreen
     show_single_value_title: true
@@ -326,7 +332,7 @@
     colors:
     - 'palette: Mixed Pastels'
     series_colors:
-      query.count: "#fb8072"
+      query.count: "#eb7d22"
     x_axis_label: ''
     y_axes:
     - label: Table Calculations
@@ -344,9 +350,14 @@
       - id: query.count
         name: Query
         axisId: query.count
+        __FILE: MODEL_NAME/usage.dashboard.lookml
+        __LINE_NUM: 344
+      __FILE: MODEL_NAME/usage.dashboard.lookml
+      __LINE_NUM: 332
     series_labels:
       query.count: Table Calculations
-    row: 0
+    listen: {}
+    row: 6
     col: 17
     width: 7
     height: 6
@@ -396,6 +407,7 @@
     series_types: {}
     single_value_title: Users Last Month
     comparison_label: Previous Month
+    listen: {}
     row: 6
     col: 0
     width: 4
@@ -433,6 +445,7 @@
     enable_conditional_formatting: false
     conditional_formatting_include_totals: false
     conditional_formatting_include_nulls: false
+    listen: {}
     row: 12
     col: 4
     width: 13
@@ -450,7 +463,8 @@
     - user.name
     limit: 500
     query_timezone: UTC
-    row: 23
+    listen: {}
+    row: 29
     col: 16
     width: 4
     height: 5
@@ -468,7 +482,8 @@
     - user.name
     limit: 500
     query_timezone: UTC
-    row: 23
+    listen: {}
+    row: 29
     col: 4
     width: 4
     height: 5
@@ -497,7 +512,8 @@
     enable_conditional_formatting: false
     conditional_formatting_include_totals: false
     conditional_formatting_include_nulls: false
-    row: 23
+    listen: {}
+    row: 29
     col: 0
     width: 4
     height: 5
@@ -514,7 +530,8 @@
     - user.name
     limit: 500
     query_timezone: UTC
-    row: 23
+    listen: {}
+    row: 29
     col: 12
     width: 4
     height: 5
@@ -531,22 +548,23 @@
     - user.name
     limit: 500
     query_timezone: UTC
-    row: 23
+    listen: {}
+    row: 29
     col: 8
     width: 4
     height: 5
   - name: User List
     type: text
     title_text: User List
-    row: 21
+    row: 27
     col: 0
     width: 24
     height: 2
-  - name: <img src="logo_image"
-      height=111px width=111px>
+  - name: <img src="IMG_URL"
+      height=81px width=122px>
     type: text
-    title_text: <img src="logo_image"
-      height=111px width=111px>
+    title_text: <img src="IMG_URL"
+      height=81px width=122px>
     subtitle_text: Instance Usage
     body_text: This dashboard highlights user activity and usage of features. Can
       also be used to assess query runtimes and performance at a high level.
@@ -591,7 +609,7 @@
     show_null_labels: false
     show_totals_labels: false
     show_silhouette: false
-    totals_color: "#808080"
+    totals_color: "#eb7d22"
     show_null_points: true
     point_style: none
     interpolation: linear
@@ -607,10 +625,11 @@
     hidden_points_if_no: []
     hidden_fields:
     series_colors:
-      query.count: "#80b1d3"
+      query.count: "#eb7d22"
     colors:
     - 'palette: Mixed Pastels'
-    row: 0
+    listen: {}
+    row: 6
     col: 4
     width: 7
     height: 6
@@ -652,7 +671,7 @@
     show_null_labels: false
     show_totals_labels: false
     show_silhouette: false
-    totals_color: "#808080"
+    totals_color: "#eb7d22"
     show_row_numbers: true
     truncate_column_names: false
     hide_totals: false
@@ -663,63 +682,11 @@
     conditional_formatting_include_nulls: false
     series_types: {}
     series_colors:
-      event.count: "#bb1034"
+      event.count: "#eb7d22"
+    listen: {}
     row: 6
     col: 11
-    width: 7
-    height: 6
-  - title: Most Active Scheduler
-    name: Most Active Scheduler
-    model: i__looker
-    explore: scheduled_plan
-    type: looker_column
-    fields:
-    - scheduled_plan.count
-    - user.name
-    filters:
-      scheduled_plan.run_once: 'no'
-    sorts:
-    - scheduled_plan.count desc
-    limit: 10
-    query_timezone: America/New_York
-    stacking: ''
-    show_value_labels: false
-    label_density: 25
-    legend_position: center
-    x_axis_gridlines: false
-    y_axis_gridlines: true
-    show_view_names: true
-    limit_displayed_rows: false
-    y_axis_combined: true
-    show_y_axis_labels: true
-    show_y_axis_ticks: true
-    y_axis_tick_density: default
-    y_axis_tick_density_custom: 5
-    show_x_axis_label: true
-    show_x_axis_ticks: true
-    x_axis_scale: auto
-    y_axis_scale_mode: linear
-    x_axis_reversed: false
-    y_axis_reversed: false
-    ordering: none
-    show_null_labels: false
-    show_totals_labels: false
-    show_silhouette: false
-    totals_color: "#808080"
-    show_row_numbers: true
-    truncate_column_names: false
-    hide_totals: false
-    hide_row_totals: false
-    table_theme: editable
-    enable_conditional_formatting: false
-    conditional_formatting_include_totals: false
-    conditional_formatting_include_nulls: false
-    series_types: {}
-    series_colors:
-      scheduled_plan.count: "#bb1034"
-    row: 6
-    col: 4
-    width: 7
+    width: 6
     height: 6
   - title: Two Tile
     name: Two Tile
@@ -766,9 +733,10 @@
     show_null_labels: false
     show_totals_labels: false
     show_silhouette: false
-    totals_color: "#808080"
+    totals_color: "#eb7d22"
     series_types: {}
     single_value_title: Users All Time
+    listen: {}
     row: 10
     col: 0
     width: 4
@@ -814,14 +782,14 @@
     interpolation: linear
     show_totals_labels: false
     show_silhouette: false
-    totals_color: "#808080"
+    totals_color: "#eb7d22"
     ordering: none
     show_null_labels: false
     series_types: {}
     colors:
     - 'palette: Mixed Pastels'
     series_colors:
-      query.count: "#fdb462"
+      query.count: "#eb7d22"
     y_axes:
     - label: ''
       maxValue:
@@ -838,15 +806,160 @@
       - id: query.count
         name: Query
         axisId: query.count
-        __FILE: Customer/looker_user_activity.dashboard.lookml
-        __LINE_NUM: 817
-      __FILE: Customer/looker_user_activity.dashboard.lookml
-      __LINE_NUM: 805
+        __FILE: MODEL_NAME/usage.dashboard.lookml
+        __LINE_NUM: 838
+      __FILE: MODEL_NAME/usage.dashboard.lookml
+      __LINE_NUM: 826
     note_state: collapsed
     note_display: below
     note_text: Queries Over Time
+    listen: {}
     title_hidden: true
     row: 18
     col: 0
     width: 4
     height: 3
+  - title: Most Active Scheduler
+    name: Most Active Scheduler
+    model: i__looker
+    explore: scheduled_plan
+    type: looker_column
+    fields:
+    - scheduled_plan.count
+    - user.name
+    filters:
+      scheduled_plan.run_once: 'no'
+    sorts:
+    - scheduled_plan.count desc
+    limit: 10
+    query_timezone: America/New_York
+    stacking: ''
+    show_value_labels: false
+    label_density: 25
+    legend_position: center
+    x_axis_gridlines: false
+    y_axis_gridlines: true
+    show_view_names: true
+    limit_displayed_rows: false
+    y_axis_combined: true
+    show_y_axis_labels: true
+    show_y_axis_ticks: true
+    y_axis_tick_density: default
+    y_axis_tick_density_custom: 5
+    show_x_axis_label: true
+    show_x_axis_ticks: true
+    x_axis_scale: auto
+    y_axis_scale_mode: linear
+    x_axis_reversed: false
+    y_axis_reversed: false
+    ordering: none
+    show_null_labels: false
+    show_totals_labels: false
+    show_silhouette: false
+    totals_color: "#eb7d22"
+    show_row_numbers: true
+    truncate_column_names: false
+    hide_totals: false
+    hide_row_totals: false
+    table_theme: editable
+    enable_conditional_formatting: false
+    conditional_formatting_include_totals: false
+    conditional_formatting_include_nulls: false
+    series_types: {}
+    series_colors:
+      scheduled_plan.count: "#bb1034"
+    listen: {}
+    row: 21
+    col: 0
+    width: 6
+    height: 6
+  - title: Average Runtime and User Activity
+    name: Average Runtime and User Activity
+    model: i__looker
+    explore: history
+    type: looker_area
+    fields:
+    - history.average_runtime
+    - history.created_date
+    - history.approximate_usage_in_minutes
+    - user.count
+    fill_fields:
+    - history.created_date
+    filters:
+      history.created_date: 14 days
+    sorts:
+    - history.created_date desc
+    limit: 500
+    query_timezone: Europe/Paris
+    stacking: ''
+    show_value_labels: false
+    label_density: 25
+    legend_position: center
+    x_axis_gridlines: false
+    y_axis_gridlines: true
+    show_view_names: false
+    point_style: none
+    series_colors:
+      user.count: "#2d9c8a"
+    series_labels:
+      user.count: "# Users"
+    limit_displayed_rows: false
+    hidden_series:
+    - history.approximate_usage_in_minutes
+    y_axes:
+    - label: ''
+      orientation: left
+      series:
+      - id: history.average_runtime
+        name: History Average Runtime
+        axisId: history.average_runtime
+      showLabels: true
+      showValues: true
+      unpinAxis: false
+      tickDensity: default
+      tickDensityCustom: 5
+      type: linear
+    - label:
+      orientation: right
+      series:
+      - id: history.approximate_usage_in_minutes
+        name: History Approximate Web Usage in Minutes
+        axisId: history.approximate_usage_in_minutes
+      showLabels: true
+      showValues: true
+      unpinAxis: false
+      tickDensity: default
+      tickDensityCustom: 5
+      type: linear
+    y_axis_combined: true
+    show_y_axis_labels: true
+    show_y_axis_ticks: true
+    y_axis_tick_density: default
+    y_axis_tick_density_custom: 5
+    show_x_axis_label: true
+    show_x_axis_ticks: true
+    x_axis_scale: auto
+    y_axis_scale_mode: linear
+    x_axis_reversed: false
+    y_axis_reversed: false
+    plot_size_by_field: false
+    reference_lines:
+    - reference_type: line
+      line_value: '6'
+      range_start: max
+      range_end: min
+      margin_top: deviation
+      margin_value: mean
+      margin_bottom: deviation
+      label_position: right
+      color: "#000000"
+      label: 6 sec
+    show_null_points: true
+    interpolation: linear
+    show_totals_labels: false
+    show_silhouette: false
+    totals_color: "#808080"
+    row: 0
+    col: 4
+    width: 20
+    height: 6
